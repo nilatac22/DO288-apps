@@ -5,7 +5,8 @@ WORKDIR /day7
 
 COPY server.js /day7/server.js
 
-RUN npm install express
+RUN npm install express &&\
+npm install mysql
 
 CMD [ "node", "server.js" ]
 EXPOSE 3000
