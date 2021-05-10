@@ -1,0 +1,14 @@
+FROM mysql:5.7
+
+RUN mkdir sql
+WORKDIR /sql
+
+COPY test.sql /sql/test.sql
+
+# Environment variables
+ENV MYSQL_USER catalin
+ENV MYSQL_PASSWORD catalin
+ENV MYSQL_DATABASE day7
+
+RUN mysql -u $MYSQL_USER -p < /sql/test.sql
+RUN $MYSQL_PASSWORD
