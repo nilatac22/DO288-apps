@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
- host: "172.30.253.103",
+ host: "localhost",
  user: "catalin",
  password: "catalin",
  database: "day7"
