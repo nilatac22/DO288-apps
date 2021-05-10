@@ -10,5 +10,4 @@ ENV MYSQL_USER catalin
 ENV MYSQL_PASSWORD catalin
 ENV MYSQL_DATABASE day7
 
-RUN mysql -u $MYSQL_USER -p < /sql/test.sql
-RUN $MYSQL_PASSWORD
+RUN mysql -u catalin -p < /sql/test.sql && \ $MYSQL_PASSWORD
