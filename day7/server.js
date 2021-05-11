@@ -7,10 +7,10 @@ const app = express()
 const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
- host: "mysql.day7.svc",
- user: "catalin",
- password: "catalin",
- database: "day7"
+ host: "mysql.day8.svc",
+ user: database-user,
+ password: database-password,
+ database: database-name
 });
 con.connect(function(err) {
  if (err) throw err;
