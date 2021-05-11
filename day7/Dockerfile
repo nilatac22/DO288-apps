@@ -1,9 +1,9 @@
 FROM node:latest
 
-RUN mkdir day7
-WORKDIR /day7
+RUN mkdir day8
+WORKDIR /day8
 
-COPY server.js /day7/server.js
+COPY server.js /day8/server.js
 
 RUN npm install express &&\
 npm install mysql
